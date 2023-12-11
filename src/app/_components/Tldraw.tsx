@@ -49,7 +49,7 @@ export default function TLDrawComponent() {
                     return (
                         <Cursor
                             key={`cursor-${connectionId}`}
-                            color={COLORS[connectionId % COLORS.length] || "red"}
+                            color={COLORS[connectionId % COLORS.length] ?? "red"}
                             x={presence.cursor.x}
                             y={presence.cursor.y}
                         />
