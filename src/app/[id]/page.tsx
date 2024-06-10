@@ -8,7 +8,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <div style={{ position: 'fixed', inset: 0 }}>
-      <TLDrawComponent roomId={params.id} userId={session?.user.id!} />
+      <TLDrawComponent roomId={params.id} userId={session!.user.id} />
     </div>
   )
 }
